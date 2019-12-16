@@ -137,7 +137,7 @@ export function i18nExtractWebapp(argv) {
             currentTranslations.webapp[key] = translationsWebapp[key];
         }
 
-        const options = {ignoreCase: true, reverse: false, depth: 1};
+        const options = { ignoreCase: true, reverse: false, depth: 1 };
         const sortedWebappTranslations = sortJson(currentTranslations.webapp, options);
         fs.writeFileSync(path.join(webappDir, 'i18n', 'en.json'), JSON.stringify(sortedWebappTranslations, null, 2) + '\n');
     });
@@ -160,7 +160,7 @@ export function i18nExtractMobile(argv) {
             currentTranslations.mobile[key] = translationsMobile[key];
         }
 
-        const options = {ignoreCase: true, reverse: false, depth: 1};
+        const options = { ignoreCase: true, reverse: false, depth: 1 };
         const sortedMobileTranslations = sortJson(currentTranslations.mobile, options);
         fs.writeFileSync(path.join(mobileDir, 'assets', 'base', 'i18n', 'en.json'), JSON.stringify(sortedMobileTranslations, null, 2) + '\n');
     });
@@ -182,7 +182,7 @@ export function i18nCombine(argv) {
         }
     }
 
-    const options = {ignoreCase: true, reverse: false, depth: 1};
+    const options = { ignoreCase: true, reverse: false, depth: 1 };
     const sortedTranslations = sortJson(translations, options);
     fs.writeFileSync(outputFile, JSON.stringify(sortedTranslations, null, 2) + '\n');
 }
@@ -194,7 +194,7 @@ export function i18nSort(argv) {
     const itemTranslationsJson = fs.readFileSync(file);
     const itemTranslations = JSON.parse(itemTranslationsJson);
 
-    const options = {ignoreCase: true, reverse: false, depth: 1};
+    const options = { ignoreCase: true, reverse: false, depth: 1 };
     const sortedTranslations = sortJson(itemTranslations, options);
     fs.writeFileSync(outputFile, JSON.stringify(sortedTranslations, null, 2) + '\n');
 }
@@ -225,7 +225,7 @@ export function i18nSplit(argv) {
                 translationsMobileOutput[key] = allTranslations[key];
             }
 
-            const options = {ignoreCase: true, reverse: false, depth: 1};
+            const options = { ignoreCase: true, reverse: false, depth: 1 };
             const sortedWebappTranslations = sortJson(translationsWebappOutput, options);
             const sortedMobileTranslations = sortJson(translationsMobileOutput, options);
             fs.writeFileSync(path.join(webappDir, 'i18n', filename), JSON.stringify(sortedWebappTranslations, null, 2) + '\n');

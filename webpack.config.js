@@ -7,12 +7,12 @@ const webpack = require('webpack');
 
 module.exports = {
     target: 'node',
-    entry: './mmjstool/src/index.js',
+    entry: './fwjstool/src/index.js',
     output: {
         path: path.resolve(__dirname, 'bin'),
-        filename: 'mmjstool',
+        filename: 'fwjstool',
     },
     plugins: [
-        new webpack.BannerPlugin({banner: '#!/usr/bin/env node', raw: true}),
+        new webpack.BannerPlugin({ banner: '#!/usr/bin/env node', raw: true }),
     ],
 };

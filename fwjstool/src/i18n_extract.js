@@ -9,12 +9,12 @@ const Parser = require('flow-parser');
 const walk = require('estree-walk');
 
 const translatableComponents = {
-    FormattedText: [{id: 'id', default: 'defaultMessage'}],
-    FormattedMessage: [{id: 'id', default: 'defaultMessage'}],
-    FormattedHTMLMessage: [{id: 'id', default: 'defaultMessage'}],
-    FormattedMarkdownMessage: [{id: 'id', default: 'defaultMessage'}],
-    FormattedMarkdownText: [{id: 'id', default: 'defaultMessage'}],
-    FormattedAdminHeader: [{id: 'id', default: 'defaultMessage'}],
+    FormattedText: [{ id: 'id', default: 'defaultMessage' }],
+    FormattedMessage: [{ id: 'id', default: 'defaultMessage' }],
+    FormattedHTMLMessage: [{ id: 'id', default: 'defaultMessage' }],
+    FormattedMarkdownMessage: [{ id: 'id', default: 'defaultMessage' }],
+    FormattedMarkdownText: [{ id: 'id', default: 'defaultMessage' }],
+    FormattedAdminHeader: [{ id: 'id', default: 'defaultMessage' }],
     LocalizedInput: ['placeholder'],
 };
 

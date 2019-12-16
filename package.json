@@ -1,19 +1,19 @@
 {
-  "name": "mmjstool",
+  "name": "fwjstool",
   "version": "1.0.0",
-  "description": "Flywave js source code utilities",
-  "main": "mmjstool/build/src/index.js",
+  "description": "flywave js source code utilities",
+  "main": "fwjstool/build/src/index.js",
   "bin": {
-    "mmjstool": "./bin/mmjstool"
+    "fwjstool": "./bin/fwjstool"
   },
   "scripts": {
     "check": "eslint --ignore-pattern node_modules --ignore-pattern build --ext .js . --quiet",
     "fix": "eslint --ignore-pattern node_modules --ignore-pattern build --ext .js . --quiet --fix",
-    "babel": "babel --presets @babel/env mmjstool/src/index.js mmjstool/src/i18n_extract.js mmjstool/src/i18n_handlers.js -d mmjstool/build",
+    "babel": "babel --presets @babel/env fwjstool/src/index.js fwjstool/src/i18n_extract.js fwjstool/src/i18n_handlers.js -d fwjstool/build",
     "build": "webpack",
     "prepare": "webpack"
   },
-  "author": "Jesús Espino <jesus.espino@flywave.com>",
+  "author": "",
   "dependencies": {
     "estree-walk": "2.2.0",
     "filehound": "1.16.5",
@@ -23,7 +23,7 @@
     "yargs": "12.0.5"
   },
   "pkg": {
-    "scripts": "mmjstool/**/*.js"
+    "scripts": "fwjstool/**/*.js"
   },
   "devDependencies": {
     "@babel/cli": "7.2.3",

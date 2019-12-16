@@ -1,7 +1,7 @@
 .DS_Store
 flywave.flywave-license
 node_modules
-mmjstool.bin
+fwjstool.bin
 
 # Compiled Object files, Static and Dynamic libs (Shared Objects)
 *.o

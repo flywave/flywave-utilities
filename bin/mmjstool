@@ -36319,8 +36319,8 @@ const i18nHandlers = __webpack_require__(224);
 
 /*eslint no-unused-vars: ["error", { "varsIgnorePattern": "[iI]gnored" }]*/
 const ignored = yargs.
-    usage('Usage: mmjstool <command> [options]').
-    example('mmjstool i18n extract-webapp --webapp-dir ./', 'Extract all the i18n strings from the webapp source code').
+    usage('Usage: fwjstool <command> [options]').
+    example('fwjstool i18n extract-webapp --webapp-dir ./', 'Extract all the i18n strings from the webapp source code').
     demandCommand(1).
     help('h').
     alias('h', 'help').
